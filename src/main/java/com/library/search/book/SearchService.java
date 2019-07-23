@@ -1,4 +1,4 @@
-package com.library.search;
+package com.library.search.book;
 
 import javax.ws.rs.*;
 import javax.ws.rs.core.Context;
@@ -20,7 +20,7 @@ public class SearchService {
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
     @Path( "/search" )
-    public ArrayList<Book> bookSerch (Book book) throws Exception {
+    public ArrayList<Book> bookSearch (Book book) throws Exception {
         return BookRepository.getInstance ( context ).searchBook (book);
     }
 }

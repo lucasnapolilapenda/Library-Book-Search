@@ -1,4 +1,4 @@
-package com.library.search;
+package com.library.search.book;
 
 import java.util.Collections;
 import java.util.HashMap;
@@ -24,7 +24,7 @@ public class ApplicationConfig extends Application {
         Set<Class<?>> resources = new java.util.HashSet<>();
         System.out.println("REST configuration starting: getClasses()");
         resources.add(org.glassfish.jersey.jackson.JacksonFeature.class);
-        resources.add(com.library.search.SearchService.class);
+        resources.add(com.library.search.book.SearchService.class);
         System.out.println("REST configuration ended successfully.");
         return resources;
     }

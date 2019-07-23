@@ -1,4 +1,4 @@
-package com.library.search;
+package com.library.search.book;
 
 import com.fasterxml.jackson.databind.ObjectMapper;
 
@@ -15,7 +15,7 @@ public class DataBaseManager {
         try {
             File file = new File ("/Users/lucasnapoli/Documentos Lucas/Projects/Mcgill/WebServices/Assingment4Micro/LibrarySearch/src/main/java/com/library/search/db.json");
 
-            ObjectMapper objectMapper = new ObjectMapper( );
+            ObjectMapper objectMapper = new ObjectMapper ( );
             Book [] arrayBook = objectMapper.readValue (file ,Book[].class);
             Collections.addAll(bookList, arrayBook);
         }catch (IOException e) {

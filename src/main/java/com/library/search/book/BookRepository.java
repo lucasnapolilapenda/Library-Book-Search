@@ -1,8 +1,7 @@
-package com.library.search;
+package com.library.search.book;
 
 
 import java.util.ArrayList;
-import java.util.List;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
@@ -14,7 +13,6 @@ import javax.ws.rs.core.UriInfo;
  */
 public class BookRepository {
 
-    private AtomicInteger ai;
     private ConcurrentHashMap<Integer, Book> map;
 
     private BookRepository() {
