@@ -1,0 +1,41 @@
+[ {
+  "isbn" : "343334533",
+  "title" : "Java 1",
+  "author" : "Freddy Kruger",
+  "description" : "Dont use Java 11",
+  "summary" : "Json",
+  "publisher" : "V1",
+  "publishingDate" : "Veros"
+}, {
+  "isbn" : "343334533",
+  "title" : "Java 2",
+  "author" : "Freddy Kruger",
+  "description" : "Yes use Java 11",
+  "summary" : "Json",
+  "publisher" : "V2",
+  "publishingDate" : "Veros"
+}, {
+  "isbn" : "343334533",
+  "title" : "Java 3",
+  "author" : "Freddy Kruger",
+  "description" : "Think use Java 11",
+  "summary" : "Json",
+  "publisher" : "V3",
+  "publishingDate" : "Veros"
+}, {
+  "isbn" : "343334533",
+  "title" : "Java 4",
+  "author" : "Freddy Kruger",
+  "description" : "No way should you use Java 11",
+  "summary" : "Json",
+  "publisher" : "V4",
+  "publishingDate" : "Veros"
+}, {
+  "isbn" : "343334533",
+  "title" : "Java 5",
+  "author" : "Freddy Kruger",
+  "description" : "Dont use Java 11",
+  "summary" : "Json",
+  "publisher" : "V5",
+  "publishingDate" : "Veros"
+} ]
