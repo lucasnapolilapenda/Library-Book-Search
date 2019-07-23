@@ -6,14 +6,14 @@ import java.io.File;
 import java.io.IOException;
 import java.util.ArrayList;
 import java.util.Collections;
-import java.util.Scanner;
+
 
 public class DataBaseManager {
 
     public ArrayList<Book> repoReader () {
         ArrayList<Book> bookList = new ArrayList<>();
         try {
-            File file = new File ("/Volumes/FILES/Projects/LibraryServerRest/src/main/jsondb/db.json");
+            File file = new File ("/Users/lucasnapoli/Documentos Lucas/Projects/Mcgill/WebServices/Assingment4Micro/LibrarySearch/src/main/java/com/library/search/db.json");
 
             ObjectMapper objectMapper = new ObjectMapper( );
             Book [] arrayBook = objectMapper.readValue (file ,Book[].class);

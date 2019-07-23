@@ -30,50 +30,52 @@ public class BookRepository {
 
 
 
-    public ArrayList<Book> searchBook(String title, String description, String publisher) throws Exception {
+    public ArrayList<Book> searchBook(Book book) throws Exception {
         ArrayList<Book> bookArrayList = new DataBaseManager().repoReader();
         Integer id = 0;
-        if (title != null) {
-            for (Book book : bookArrayList) {
-                if (book.getTitle().equals(title)) {
+        if (book.getTitle() != null) {
+            for (Book b : bookArrayList) {
+                if (b.getTitle().equals(book.getTitle())) {
                     id++;
-                    map.put(id, book);
+                    map.put(id, b);
                 }
             }
         }
 
-        if (description != null){
-            for (Book book : bookArrayList) {
-                String [] words = book.getDescription().split(" ");
+        if (book.getDescription() != null){
+            for (Book b : bookArrayList) {
+                String [] words = b.getDescription().split(" ");
                 for (String aux : words) {
-                    if (aux.equals(description)) {
+                    if (aux.equals(book.getDescription())) {
                         id++;
-                        map.put (id, book);
+                        map.put (id, b);
                     }
                 }
             }
         }
 
-        if (publisher != null) {
-            for (Book book : bookArrayList) {
-                if (book.getPublisher().equals(publisher)) {
+        if (book.getPublisher() != null) {
+            for (Book b : bookArrayList) {
+                if (book.getPublisher().equals(b.getPublisher())) {
                     id++;
-                    map.put(id, book);
+                    map.put(id, b);
                 }
             }
         }
 
         if (map.get(1) == null){
             return bookArrayList;
-        } else {
-
-            Set<Integer> ids = map.keySet();
-            ArrayList<Book> finalBookList = new ArrayList<>();
-            for (Integer aux : ids) {
-                finalBookList.add(map.get(aux).clone());
-            }
-            map.clear();
-            return finalBookList;
         }
+
+
+
+        Set<Integer> ids = map.keySet();
+        ArrayList<Book> finalBookList = new ArrayList<>();
+        for (Integer aux : ids) {
+            finalBookList.add(map.get(aux).clone());
+        }
+        map.clear();
+        return finalBookList;
+
     }
 }

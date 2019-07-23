@@ -24,7 +24,7 @@ public class Book implements Cloneable {
     private String description;
     private String summary;
     private String publisher;
-    private String publishingdate;
+    private String publishingDate;
 
 
     public Book() {}
@@ -103,11 +103,11 @@ public class Book implements Cloneable {
     }
 
     public String getPublishingdate() {
-        return publishingdate;
+        return publishingDate;
     }
 
     public void setPublishingDate(String publishingdate) {
-        this.publishingdate = publishingdate;
+        this.publishingDate = publishingdate;
     }
 
     public Book clone() {
@@ -118,7 +118,7 @@ public class Book implements Cloneable {
         b.setDescription(this.description);
         b.setSummary(this.summary);
         b.setPublisher(this.publisher);
-        b.setPublishingDate(this.publishingdate);
+        b.setPublishingDate(this.publishingDate);
         return b;
     }
 }
