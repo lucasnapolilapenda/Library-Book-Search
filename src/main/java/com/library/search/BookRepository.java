@@ -3,13 +3,14 @@ package com.library.search;
 
 import java.util.ArrayList;
 import java.util.List;
+import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
 import javax.ws.rs.core.UriInfo;
 
 /**
  *
- * @author Ali
+ * @lucasnapoli
  */
 public class BookRepository {
 
@@ -29,7 +30,7 @@ public class BookRepository {
 
 
 
-    public List<Book> searchBook(String title, String description, String publisher) throws Exception {
+    public ArrayList<Book> searchBook(String title, String description, String publisher) throws Exception {
         ArrayList<Book> bookArrayList = new DataBaseManager().repoReader();
         Integer id = 0;
         if (title != null) {
@@ -62,7 +63,17 @@ public class BookRepository {
             }
         }
 
+        if (map.get(1) == null){
+            return bookArrayList;
+        } else {
 
+            Set<Integer> ids = map.keySet();
+            ArrayList<Book> finalBookList = new ArrayList<>();
+            for (Integer aux : ids) {
+                finalBookList.add(map.get(aux).clone());
+            }
+            map.clear();
+            return finalBookList;
+        }
     }
-
 }
