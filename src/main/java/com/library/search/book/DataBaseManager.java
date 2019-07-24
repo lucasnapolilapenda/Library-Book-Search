@@ -13,7 +13,7 @@ public class DataBaseManager {
     public ArrayList<Book> repoReader () {
         ArrayList<Book> bookList = new ArrayList<>();
         try {
-            File file = new File ("/Users/lucasnapoli/Documentos Lucas/Projects/Mcgill/WebServices/Assingment4Micro/LibrarySearch/src/main/java/com/library/search/db.json");
+            File file = new File ("/Users/lucasnapoli/Documentos Lucas/Projects/Mcgill/WebServices/Assingment4Micro/LibrarySearchBook/src/main/java/com/library/search/book/db1.json");
 
             ObjectMapper objectMapper = new ObjectMapper ( );
             Book [] arrayBook = objectMapper.readValue (file ,Book[].class);
