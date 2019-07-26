@@ -1,6 +1,6 @@
 [ {
   "isbn" : "343334533",
-  "title" : "Java 1",
+  "title" : "Java 1 el retorno",
   "author" : "Freddy Kruger",
   "description" : "Dont use Java 11",
   "summary" : "Json",
@@ -8,12 +8,12 @@
   "publishingdate" : "Veros"
 }, {
   "isbn" : "343334533",
-  "title" : "Java 2",
+  "title" : "Java 1",
   "author" : "Freddy Kruger",
   "description" : "Yes use Java 11",
   "summary" : "Json",
   "publisher" : "V2",
-  "publishingdate" : "Veros"
+  "publishingdate" : "Verito"
 }, {
   "isbn" : "343334533",
   "title" : "Java 3",

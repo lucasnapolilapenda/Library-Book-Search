@@ -12,7 +12,7 @@ import javax.ws.rs.core.Application;
  */
 
 @ApplicationPath("/service")
-public class ApplicationConfig extends Application {
+public class AppConfig extends Application {
 
     /**
      * Get classe for configuration

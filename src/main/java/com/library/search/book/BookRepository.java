@@ -35,7 +35,7 @@ public class BookRepository {
         System.out.println(bookArrayList.get(0).getTitle());
         if (book.getTitle() != null) {
             for (Book b : bookArrayList) {
-                if (b.getTitle().equals(book.getTitle())) {
+                if (b.getTitle().contains(book.getTitle())) {
                     id++;
                     map.put(id, b);
                 }
@@ -56,7 +56,7 @@ public class BookRepository {
 
         if (book.getPublisher() != null) {
             for (Book b : bookArrayList) {
-                if (book.getPublisher().equals(b.getPublisher())) {
+                if (book.getPublisher().contains(b.getPublisher())) {
                     id++;
                     map.put(id, b);
                 }
