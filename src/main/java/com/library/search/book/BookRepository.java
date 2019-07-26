@@ -31,6 +31,8 @@ public class BookRepository {
     public ArrayList<Book> searchBook(Book book) throws Exception {
         ArrayList<Book> bookArrayList = new DataBaseManager().repoReader();
         Integer id = 0;
+        System.out.println(book.getTitle());
+        System.out.println(bookArrayList.get(0).getTitle());
         if (book.getTitle() != null) {
             for (Book b : bookArrayList) {
                 if (b.getTitle().equals(book.getTitle())) {

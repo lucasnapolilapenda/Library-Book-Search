@@ -16,7 +16,7 @@ public class SearchService {
     public SearchService() {
     }
 
-    @GET
+    @POST
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
     @Path( "/search" )

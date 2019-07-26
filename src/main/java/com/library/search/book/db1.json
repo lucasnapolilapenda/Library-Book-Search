@@ -5,7 +5,7 @@
   "description" : "Dont use Java 11",
   "summary" : "Json",
   "publisher" : "V1",
-  "publishingDate" : "Veros"
+  "publishingdate" : "Veros"
 }, {
   "isbn" : "343334533",
   "title" : "Java 2",
@@ -13,7 +13,7 @@
   "description" : "Yes use Java 11",
   "summary" : "Json",
   "publisher" : "V2",
-  "publishingDate" : "Veros"
+  "publishingdate" : "Veros"
 }, {
   "isbn" : "343334533",
   "title" : "Java 3",
@@ -21,7 +21,7 @@
   "description" : "Think use Java 11",
   "summary" : "Json",
   "publisher" : "V3",
-  "publishingDate" : "Veros"
+  "publishingdate" : "Veros"
 }, {
   "isbn" : "343334533",
   "title" : "Java 4",
@@ -29,7 +29,7 @@
   "description" : "No way should you use Java 11",
   "summary" : "Json",
   "publisher" : "V4",
-  "publishingDate" : "Veros"
+  "publishingdate" : "Veros"
 }, {
   "isbn" : "343334533",
   "title" : "Java 5",
@@ -37,5 +37,5 @@
   "description" : "Dont use Java 11",
   "summary" : "Json",
   "publisher" : "V5",
-  "publishingDate" : "Veros"
+  "publishingdate" : "Veros"
 } ]
