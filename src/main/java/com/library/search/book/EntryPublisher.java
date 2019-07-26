@@ -7,8 +7,8 @@ import com.sun.net.httpserver.HttpServer;
 
 public class EntryPublisher {
 
-    private static final int port = 8080;
-    private static final String uri = "/ServerRest_war/";
+    private static final int port = 8091;
+    private static final String uri = "/books/";
     private static final String url = "http://localhost:" + port + uri;
 
 

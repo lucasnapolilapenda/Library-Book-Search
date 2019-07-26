@@ -11,7 +11,7 @@ import javax.ws.rs.core.Application;
 /**App Config
  */
 
-@ApplicationPath("/service")
+@ApplicationPath("/books/")
 public class AppConfig extends Application {
 
     /**

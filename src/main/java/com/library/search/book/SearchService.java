@@ -19,7 +19,7 @@ public class SearchService {
     @POST
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
-    @Path( "/search" )
+    @Path( "/list" )
     public ArrayList<Book> bookSearch (Book book) throws Exception {
         return BookRepository.getInstance ( context ).searchBook (book);
     }
