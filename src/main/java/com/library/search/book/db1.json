@@ -1,41 +1,81 @@
 [ {
-  "isbn" : "343334533",
-  "title" : "Java 1 el retorno",
-  "author" : "Freddy Kruger",
+  "isbn" : "978-3-26-148410-0",
+  "title" : "Java 1: the return of the code",
+  "author" : "Freddy Krueger",
   "description" : "Dont use Java 11",
   "summary" : "Json",
-  "publisher" : "V1",
-  "publishingdate" : "Veros"
+  "publisher" : "McGill",
+  "publishingdate" : "20180701"
 }, {
-  "isbn" : "343334533",
-  "title" : "Java 1",
-  "author" : "Freddy Kruger",
-  "description" : "Yes use Java 11",
-  "summary" : "Json",
-  "publisher" : "V2",
-  "publishingdate" : "Verito"
+  "isbn" : "978-3-26-148410-1",
+  "title" : "The revenge of the Java",
+  "author" : "It",
+  "description" : "Please, check the properties",
+  "summary" : "Xml, an alternative",
+  "publisher" : "McGill",
+  "publishingdate" : "20190101"
 }, {
-  "isbn" : "343334533",
-  "title" : "Java 3",
-  "author" : "Freddy Kruger",
-  "description" : "Think use Java 11",
-  "summary" : "Json",
-  "publisher" : "V3",
-  "publishingdate" : "Veros"
+  "isbn" : "978-3-26-148410-3",
+  "title" : "Java Strikes Back",
+  "author" : "Han Solo",
+  "description" : "Wrangler Java, if you can...",
+  "summary" : "Regex...in Java...",
+  "publisher" : "McGill",
+  "publishingdate" : "20190101"
 }, {
-  "isbn" : "343334533",
-  "title" : "Java 4",
-  "author" : "Freddy Kruger",
-  "description" : "No way should you use Java 11",
-  "summary" : "Json",
-  "publisher" : "V4",
-  "publishingdate" : "Veros"
+  "isbn" : "978-3-26-148410-4",
+  "title" : "Communication Sciences",
+  "author" : "Alberto Pascuali",
+  "description" : "Old Book",
+  "summary" : "My past",
+  "publisher" : "Concordia",
+  "publishingdate" : "20190101"
 }, {
-  "isbn" : "343334533",
-  "title" : "Java 5",
-  "author" : "Freddy Kruger",
-  "description" : "Dont use Java 11",
-  "summary" : "Json",
-  "publisher" : "V5",
-  "publishingdate" : "Veros"
+  "isbn" : "978-3-26-148410-5",
+  "title" : "Las Mil y Una Noches",
+  "author" : "Anonimo",
+  "description" : "El libro de Vero",
+  "summary" : "Elegido por Vero",
+  "publisher" : "Concordia",
+  "publishingdate" : "20190101"
+}, {
+  "isbn" : "978-3-26-148410-6",
+  "title" : "Alicia en el Pais de las Maravillas",
+  "author" : "Lewis Carroll",
+  "description" : "Otro libro de Vero",
+  "summary" : "Tim lo hizo muy bien",
+  "publisher" : "Concordia",
+  "publishingdate" : "20190101"
+}, {
+  "isbn" : "978-3-26-148410-7",
+  "title" : "Avengers End Game",
+  "author" : "Stan Lee",
+  "description" : "Libro de Lucas",
+  "summary" : "Excelente",
+  "publisher" : "Thanos",
+  "publishingdate" : "20190101"
+}, {
+  "isbn" : "978-3-26-148410-8",
+  "title" : "Age of Ultron",
+  "author" : "Stan Lee",
+  "description" : "Super",
+  "summary" : "I like it",
+  "publisher" : "Thanos",
+  "publishingdate" : "20170101"
+}, {
+  "isbn" : "978-3-26-148410-9",
+  "title" : "Infinity War",
+  "author" : "Stan Lee",
+  "description" : "My favority movie/book",
+  "summary" : "not really a book",
+  "publisher" : "Thanos",
+  "publishingdate" : "20190101"
+}, {
+  "isbn" : "978-3-26-148411-0",
+  "title" : "Tio tigre y tio conejo",
+  "author" : "Del pueblo",
+  "description" : "Viene directo de las entranas de Venezuela",
+  "summary" : "No lo publicaria Thanos",
+  "publisher" : "Thanos",
+  "publishingdate" : "19900101"
 } ]
