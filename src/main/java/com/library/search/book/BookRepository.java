@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import java.util.Set;
 import java.util.concurrent.ConcurrentHashMap;
 import java.util.concurrent.atomic.AtomicInteger;
+import javax.ws.rs.core.Context;
 import javax.ws.rs.core.UriInfo;
 
 /**
@@ -12,6 +13,9 @@ import javax.ws.rs.core.UriInfo;
  * @lucasnapoli
  */
 public class BookRepository {
+
+    @Context
+    private UriInfo context;
 
     private ConcurrentHashMap<Integer, Book> map;
 
@@ -27,15 +31,15 @@ public class BookRepository {
     }
 
 
-
     public ArrayList<Book> searchBook(Book book) throws Exception {
+
         ArrayList<Book> bookArrayList = new DataBaseManager().repoReader();
         Integer id = 0;
         System.out.println(book.getTitle());
         System.out.println(bookArrayList.get(0).getTitle());
         if (book.getTitle() != null) {
             for (Book b : bookArrayList) {
-                if (b.getTitle().contains(book.getTitle())) {
+                if (b.getTitle().toLowerCase().contains(book.getTitle().toLowerCase())) {
                     id++;
                     map.put(id, b);
                 }
@@ -46,7 +50,7 @@ public class BookRepository {
             for (Book b : bookArrayList) {
                 String [] words = b.getDescription().split(" ");
                 for (String aux : words) {
-                    if (aux.equals(book.getDescription())) {
+                    if (aux.toLowerCase().equals(book.getDescription().toLowerCase())) {
                         id++;
                         map.put (id, b);
                     }
@@ -56,7 +60,7 @@ public class BookRepository {
 
         if (book.getPublisher() != null) {
             for (Book b : bookArrayList) {
-                if (book.getPublisher().contains(b.getPublisher())) {
+                if (book.getPublisher().toLowerCase().contains(b.getPublisher().toLowerCase())) {
                     id++;
                     map.put(id, b);
                 }
