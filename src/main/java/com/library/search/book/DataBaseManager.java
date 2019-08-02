@@ -25,7 +25,7 @@ public class DataBaseManager {
         ArrayList<Book> bookList = new ArrayList<>();
         BufferedReader reader = null;
         try {
-            String file = "/Users/lucasnapoli/Documentos Lucas/Projects/Mcgill/WebServices/Assingment4Micro/LibrarySearchBook/src/main/java/com/library/search/book/db1.json";
+            String file = "/Users/lucasnapoli/Documentos Lucas/Projects/Mcgill/WebServices/Assingment4Micro/LibrarySearchBook/src/main/java/com/library/search/book/books.json";
             reader = new BufferedReader(new FileReader(file));
             ObjectMapper objectMapper = new ObjectMapper ( );
             Book [] arrayBook = objectMapper.readValue (reader ,Book[].class);
