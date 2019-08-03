@@ -22,8 +22,9 @@ public class SearchService {
     @POST
     @Produces({MediaType.APPLICATION_JSON})
     @Consumes({MediaType.APPLICATION_JSON})
-    @Path( "/list/" )
+    @Path( "/list" )
     public ArrayList<Book> bookSearch (@HeaderParam("authorization")String auth, Book book)  {
+        System.out.println(credentialValidation(auth));
         if (credentialValidation(auth)) {
             try {
                 return BookRepository.getInstance(context).searchBook(book);
@@ -46,9 +47,10 @@ public class SearchService {
             System.out.println("Error: " + e);
         }
         decodeAuth = new String(bytes);
+        System.out.println(decodeAuth);
 
         String [] userCredentials = decodeAuth.split(":");
-            if (userCredentials[0].equals("book-service") && userCredentials.equals("book-service-secure-password- 1234")){
+            if (userCredentials[0].equals("book-service") && userCredentials[1].equals("book-service-secure-password-1234")){
                 return true;
             } else {
                 return false;
