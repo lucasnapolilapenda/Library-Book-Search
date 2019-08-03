@@ -1,5 +1,13 @@
 package com.library.search.book;
 
+/**
+ *
+ * @author Lucas Napoli
+ * V1.0
+ * Library Microservices
+ * Service Book Search
+ */
+
 import java.util.Collections;
 import java.util.HashMap;
 import java.util.Map;

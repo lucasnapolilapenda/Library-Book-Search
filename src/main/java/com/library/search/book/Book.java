@@ -2,7 +2,15 @@ package com.library.search.book;
 /**
  *
  * @author Lucas Napoli
+ * V1.0
+ * Library Microservices
+ * Service Book Search
  */
+
+/**
+ * Book class to manage book
+ */
+
 public class Book implements Cloneable {
 
     /**
@@ -88,6 +96,11 @@ public class Book implements Cloneable {
     public void setPublisher(String publisher) {
         this.publisher = publisher;
     }
+
+    /**
+     * To manage String
+     * @return String String
+     */
 
     @Override
     public String toString(){

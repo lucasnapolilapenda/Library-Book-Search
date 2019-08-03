@@ -1,5 +1,13 @@
 package com.library.search.book;
 
+/**
+ *
+ * @author Lucas Napoli
+ * V1.0
+ * Library Microservices
+ * Service Book Search
+ */
+
 
 import java.util.ArrayList;
 import java.util.Set;
@@ -10,7 +18,7 @@ import javax.ws.rs.core.UriInfo;
 
 /**
  *
- * @lucasnapoli
+ * Class to manage the book search Book Repository
  */
 public class BookRepository {
 
@@ -25,11 +33,26 @@ public class BookRepository {
 
     private static BookRepository instance = null;
 
+    /**
+     *
+     * Intance of BookRepository
+     * @param context URI contect
+     * @return BookRepository map
+     */
+
     public static BookRepository getInstance(UriInfo context){
         return instance == null && context != null?
                 (instance = new BookRepository()): instance;
     }
 
+
+    /**
+     *
+     * Receive a book info return the search result
+     * @param book Book send by Client
+     * @return Array with Book info to be transformed to Json
+     * @throws Exception Exception
+     */
 
     public ArrayList<Book> searchBook(Book book) throws Exception {
 
